@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_begin="24dp" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_end="24dp" />
+
+
+    <EditText
+        android:id="@+id/edit_nome"
+        android:layout_width="241dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="24dp"
+        android:drawableEnd="@drawable/ic_nome"
+        android:hint="Nome"
+        android:inputType="text"
+        android:minHeight="48dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/edit_idade"
+        android:layout_width="241dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="16dp"
+        android:drawableEnd="@drawable/ic_idade"
+        android:hint="Idade"
+        android:inputType="number"
+        android:minHeight="48dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edit_nome" />
+
+    <EditText
+        android:id="@+id/edit_temperatura"
+        android:layout_width="241dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="8dp"
+        android:drawableEnd="@drawable/ic_temperatura"
+        android:hint="Temperatura"
+        android:inputType="numberDecimal"
+        android:minHeight="48dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edit_idade" />
+
+    <EditText
+        android:id="@+id/dias_tosse"
+        android:layout_width="241dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="4dp"
+        android:hint="Dias com tosse"
+        android:inputType="number"
+        android:minHeight="48dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edit_temperatura" />
+
+    <EditText
+        android:id="@+id/dias_dor"
+        android:layout_width="241dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="8dp"
+        android:hint="Dias com dor de cabeça"
+        android:inputType="number"
+        android:minHeight="48dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/dias_tosse" />
+
+    <TextView
+        android:id="@+id/edit_paises"
+        android:layout_width="358dp"
+        android:layout_height="25dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="10dp"
+        android:minHeight="20dp"
+        android:text="Viajens feitas pelo paciente:"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.818"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/dias_dor" />
+
+    <CheckBox
+        android:id="@+id/italia"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:buttonTint="@color/black"
+        android:text="Itália"
+        android:textColor="@color/black"
+        app:layout_constraintEnd_toStartOf="@+id/guideline2"
+        app:layout_constraintStart_toStartOf="@+id/guideline"
+        app:layout_constraintTop_toBottomOf="@+id/edit_paises" />
+
+    <CheckBox
+        android:id="@+id/china"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="2dp"
+        android:buttonTint="@color/black"
+        android:text="China"
+        android:textColor="@color/black"
+        app:layout_constraintEnd_toStartOf="@+id/guideline2"
+        app:layout_constraintStart_toStartOf="@+id/guideline"
+        app:layout_constraintTop_toBottomOf="@+id/italia" />
+
+    <CheckBox
+        android:id="@+id/portugal"
+        android:layout_width="202dp"
+        android:layout_height="55dp"
+        android:layout_marginTop="2dp"
+        android:buttonTint="@color/black"
+        android:text="Portugal"
+        android:textColor="@color/black"
+        app:layout_constraintEnd_toStartOf="@+id/guideline2"
+        app:layout_constraintStart_toStartOf="@+id/guideline"
+        app:layout_constraintTop_toBottomOf="@+id/china" />
+
+    <CheckBox
+        android:id="@+id/eua"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="2dp"
+        android:buttonTint="@color/black"
+        android:text="EUA"
+        android:textColor="@color/black"
+        app:layout_constraintEnd_toStartOf="@+id/guideline2"
+        app:layout_constraintStart_toStartOf="@+id/guideline"
+        app:layout_constraintTop_toBottomOf="@+id/indonesia" />
+
+    <CheckBox
+        android:id="@+id/indonesia"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="2dp"
+        android:buttonTint="@color/black"
+        android:text="Indonésia"
+        android:textColor="@color/black"
+        app:layout_constraintEnd_toStartOf="@+id/guideline2"
+        app:layout_constraintStart_toStartOf="@+id/guideline"
+        app:layout_constraintTop_toBottomOf="@+id/portugal" />
+
+    <EditText
+        android:id="@+id/edit_semanasViagem"
+        android:layout_width="355dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp"
+        android:hint="Há quantas semanas a viagem foi feita"
+        android:inputType="number"
+        android:minHeight="48dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/eua"
+        app:layout_constraintVertical_bias="0.212" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

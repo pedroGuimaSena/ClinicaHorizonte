@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">ClinicaHora</string>
+    <string name="txtTitleMainActivity">PACIENTES CADASTRADOS</string>
+    <string name="txtBtnCadastrar">NOVO PACIENTE</string>
+    <string name="txtBtnFinalizarCadastro">CADASTRAR</string>
+
+    <string name="txtTitleAlertNovoPaciente">Novo Paciente</string>
+    <string name="txtAlertSalvar">Salvar</string>
+    <string name="txtAlertCancelar">Cancelar</string>
+</resources>
